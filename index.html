@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html>
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500&display=swap" rel="stylesheet"> 
 <style>
 ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
+
 }
 li {
     display: inline;
@@ -15,8 +18,8 @@ li {
 }
 .topnav a {
     float: left;
-    display: inline;
     color: black;
+    display:inline;
     padding: 14px 16px;
     text-decoration: none;
 }
@@ -36,6 +39,28 @@ li {
 .bottomnav a:hover {
     text-decoration: underline;
 }
+.google-image {
+    display: flex;
+    justify-content: center;
+}
+.sign-in {
+    font-family: 'Roboto', sans-serif;
+    background-color:#1a73e8;
+    color: white;
+    border: transparent;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 0.25px;
+    line-height: 16px;
+    margin-right: 8px;
+    min-width: 96px;
+    padding: 9px 23px;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
 
 
 
@@ -50,17 +75,17 @@ li {
             <li><a href='#'>Gmail</a></li>
             <li><a href='#'>Images</a></li>
             <li><a href='#'>Google apps</a></li>
-            <li><a href='#'>Sign in</a></li>
+            <li><a href='#'><button class='sign-in'>Sign in</button></a></li>
         </ul>
     </div>
 </header>
 
 <body>
-    <div class='googleImage'>
+    <div class='google-image'>
         <img class='google' src='https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png' alt='Google'> 
     </div>
     <div>
-        <input type='text' placeholder='Search'>
+        <input type='text' placeholder='Search' class='search-bar'>
     </div>
     <div>
         <button class='google-search'>Google Search</button>
