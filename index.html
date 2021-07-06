@@ -23,7 +23,19 @@ li {
 .topnav a:hover {
     text-decoration: underline;
 }
-
+.bottomnav {
+    overflow: hidden;
+}
+.bottomnav a{
+    float: left;
+    display: inline;
+    color: black;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.bottomnav a:hover {
+    text-decoration: underline;
+}
 
 
 
@@ -51,8 +63,27 @@ li {
         <input type='text' placeholder='Search'>
     </div>
     <div>
-
+        <button class='google-search'>Google Search</button>
+        <button class='lucky'>I'm feeling lucky</button>    
+    </div>
+    <div> 
+        <p>Google offered in: <a href='#'>Français</a></p>
     </div>
 </body>
+<footer>
+    <div>
+        <p>Canada</p>
+    </div>
+    <div class='bottomnav'>
+        <ul>
+            <li><a href='#'>Advertising</a></li>
+            <li><a href='#'>Business</a></li>
+            <li><a href='#'>How Seach Works</a></li>
+            <li><a href='#'>Privacy</a></li>
+            <li><a href='#'>Terms</a></li>
+            <li><a href='#'>Settings</a></li>           
+        </ul>
+    </div>
+</footer>
 
 </html>
